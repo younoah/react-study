@@ -33,4 +33,5 @@
 ### 멤버
 
 - [younoah](https://github.com/younoah)
-- 
+- [youmeSon](https://github.com/youmeSon)
+- [vsakurav1](https://github.com/vsakurav1)
