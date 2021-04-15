@@ -7,7 +7,7 @@ ___
 > 리액트는 컴포넌트이다
 1. Class Component
 2. Function Component
-### 1) Class component는 Componenet라는 클래를 extends, 상속해서 만들 수 있음.
+### 1) Class component는 Componenet라는 클래스를 extends, 상속해서 만들 수 있음.
 
 - 상태, 데이터를 담을 수 있는 state라는 object가 들어 있음 → 상태가 변경이 되면 렌더 함수가 호출이 되면서 업데이트된 내용이 사용자에게 보여짐.
 - Component에 state가 있고 정기적으로 update가 되어야한다면 class component 사용.
