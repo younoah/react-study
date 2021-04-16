@@ -79,7 +79,7 @@ PureComponent(or memo)없이 써도 밑에 두 글의 이유때문에 괜찮지�
 예를 들어, componentDidUpdate( )라는 React가 Component가 업데이트 될 때마다 호출해주는 이런 함수가 있는데, 우리가 Component가 업데이트 될 때마다 유튜브에 있는 데이터를 받아 온다던지, 조금 무거운 일(로직)을 수행해야 되면 render함수가 호출 될 때마다 얘가 호출 되어서 불필요한 일들이 수행될 수 있음(화면 깜빡임같은) 
 
 - PureComponent ⇒ implements it with a shallow pros and state comparison.
-- Component가 업데이트 되기 전에 React에서 **'야, 너 Component 업데이트 되어야 되니?'**라고 물어보는 'shouldComponentUpdate'라는 함수가 있는데... Component는 이 함수를 기본적으로 구현해 놓지 않았지만 PureComponent는 이 함수를 구현해 놓았음!
+- Component가 업데이트 되기 전에 React에서 **'야, 너 Component 업데이트 되어야 되니?'** 라고 물어보는 'shouldComponentUpdate'라는 함수가 있는데... Component는 이 함수를 기본적으로 구현해 놓지 않았지만 PureComponent는 이 함수를 구현해 놓았음!
 
 → PureComponent는 props와 state 안에 들어 있는 최상위의 데이터가 변하지 않으면 render 함수가 호출되지 않음
 
