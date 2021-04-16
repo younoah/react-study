@@ -103,7 +103,7 @@ export default HabitAddForm;
 ```js
 import { useState } from "react";
 
-function HabitAddForm({ onAddForm }) {
+function HabitAddForm({ onAdd }) {
   const [name, setName] = useState("");
 
   const onChange = (e) => {
@@ -113,7 +113,7 @@ function HabitAddForm({ onAddForm }) {
   const onSubmit = (e) => {
     e.preventDefault();
     if (name) {
-      onAddForm(name);
+      onAdd(name);
     }
     setName("");
   };
