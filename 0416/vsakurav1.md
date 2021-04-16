@@ -1,6 +1,7 @@
 ### DOM Access
 
 > 리액트에서는 직접적으로 DOM선택을 하지 않는다.
+
 > dom을 조작해야 할때는 ref를 이용하고, ref안에 있는 current를 이용해서 접근 한다.
 
 ```js
@@ -18,11 +19,13 @@ onSubmit = (e) => {
 - class component
 
 > React.Component
+
 > React.PureComponent
 
 - function component
 
 > memo(function)
+
 > React Hook
 
 부모 컴포넌트의 state가 변경되면 자식 컴포넌트가 모두 리랜더링 된다.
@@ -41,16 +44,23 @@ virtual dom을 사용해서 간단한 동작은 성능상으로 크게 문제가
 #### shallow comparison
 
 > reference 만 비교한다.
+
 > 이렇게 reference 값들을 수정해도 참조 값이 같기 때문에 데이터가 변경됨을 감지하지 못한다.
+
 > 그래서 불변성을 지키면서 새로운 reference를 반환하는 map이나 filter등을 이용하여 데이터를 업데이트 한다.
 
 ### Life Cycle Method
 
 - componentDidMount
+
   > 컴포넌트가 UI상에 등록이 되었을 때 호출한다
+
   > 주로 api 호출 등을 처리한다.
+
 - componentWillUnmount
+
   > 컴포넌트가 UI상에서 삭제 되기 직전에 호출한다.
+
   > clearInterval 등, 메모리 누수를 막는다.
 
 ---
