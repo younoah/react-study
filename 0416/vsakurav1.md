@@ -16,24 +16,20 @@ onSubmit = (e) => {
 
 ### Components
 
-- class component
+#### class component
 
-> React.Component
+- React.Component
+- React.PureComponent
 
-> React.PureComponent
+#### function component
 
-- function component
-
-> memo(function)
-
-> React Hook
+- memo(function)
+- React Hook
 
 부모 컴포넌트의 state가 변경되면 자식 컴포넌트가 모두 리랜더링 된다.
 virtual dom을 사용해서 간단한 동작은 성능상으로 크게 문제가 되지 않지만 api 호출등의 무거운 작업을 하게 된다면 성능저하 문제가 일어난다.
 
 ### class component
-
----
 
 #### PureComponent
 
@@ -51,27 +47,22 @@ virtual dom을 사용해서 간단한 동작은 성능상으로 크게 문제가
 
 ### Life Cycle Method
 
-- componentDidMount
+#### componentDidMount
 
-  > 컴포넌트가 UI상에 등록이 되었을 때 호출한다
+- 컴포넌트가 UI상에 등록이 되었을 때 호출한다
+- 주로 api 호출 등을 처리한다.
 
-  > 주로 api 호출 등을 처리한다.
+#### componentWillUnmount
 
-- componentWillUnmount
+- 컴포넌트가 UI상에서 삭제 되기 직전에 호출한다.
 
-  > 컴포넌트가 UI상에서 삭제 되기 직전에 호출한다.
-
-  > clearInterval 등, 메모리 누수를 막는다.
-
----
+- clearInterval 등, 메모리 누수를 막는다.
 
 ### function component
 
-#### class component와 function component 예제
+class component와 function component 예제
 
 > class component
-
----
 
 ```js
 import React, { Component, createRef } from "react";
@@ -148,17 +139,17 @@ export default HabitAddForm;
 
 #### memo == PureComponent
 
-> props의 데이터가 변경 될때에만 re-rendering 한다.
+props의 데이터가 변경 될때에만 re-rendering 한다.
 
 ### React Hook
 
-\*\* function component는 전체가 반복되어 진다.
+**function component는 전체가 반복되어 진다.**
 
 > useState는 리액트 내부에서 따로 처리 하기 떄문에 반복적으로 실행이 되어도 기억되어진다.
 
 - useRef
-  > == React.createRef
+  == React.createRef
 - useCallback
-  > 처음 컴포넌트가 랜더링 될때 useCallback으로 만들어진 함수를 캐시에 담아 기억하고 있는다. 그러면 리랜더링 되어져도 이 함수는 다시 생성되지 않는다.
+  처음 컴포넌트가 랜더링 될때 useCallback으로 만들어진 함수를 캐시에 담아 기억하고 있는다. 그러면 리랜더링 되어져도 이 함수는 다시 생성되지 않는다.
 - useEffect
-  > componentDidMount + componentDidUpdate
+  componentDidMount + componentDidUpdate
