@@ -14,10 +14,20 @@
 > react에서 같은 클래스명의 css를 사용하게 되면 import하지 않아도 덮어 씌어지는 문제가 있다. 그를 해결 하기 위해 보편적으로 BEM 등의 네이밍 방법을 사용했다.
 
 ```jsx
+// Button1 Component
 function Button1() {
   return (
     <div className="button">
       <span className="text">Button1</span>
+    </div>
+  );
+}
+
+// Button2 Component
+function Button2() {
+  return (
+    <div className="button">
+      <span className="text">Button2</span>
     </div>
   );
 }
@@ -32,19 +42,7 @@ function Button1() {
 .text {
   color: blue;
 }
-```
 
-```jsx
-function Button2() {
-  return (
-    <div className="button">
-      <span className="text">Button2</span>
-    </div>
-  );
-}
-```
-
-```css
 /* button2.css */
 .button {
   background-color: sandybrown;
