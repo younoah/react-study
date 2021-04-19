@@ -2,7 +2,7 @@
 
 1. Github에서 repository를 만든다
 2. git remote add origin git@github.com: 이렇게 적힌 것 cmder 안에 붙여넣기 
-3. (지금까지 작업한 파일이 있다면) git add*
+3. (지금까지 작업한 파일이 있다면) git add *
 4. git commit -m "작업한 내용 작성하기"
 5. git push -u origin master
 
