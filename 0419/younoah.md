@@ -92,13 +92,13 @@ export default Button2;
 
 - 결과
 
-![postcss2](/Users/uno/Desktop/postcss2.png)
+![postcss2](https://user-images.githubusercontent.com/41064875/115237407-7f020e80-a157-11eb-8440-f82d5c3d9d74.png)
 
 
 
 - 분리(BEM)해서 작성안 할 경우 마지막으로 읽힌 css로 덮어씌워진다.
 
-![postcss1](/Users/uno/Desktop/postcss1.png)
+![postcss1](https://user-images.githubusercontent.com/41064875/115237409-7f9aa500-a157-11eb-8739-01ee076e4835.png)
 
 
 
@@ -176,7 +176,7 @@ export default Button2;
 }
 ```
 
-![postcss3](/Users/uno/Desktop/postcss3.png)
+![postcss3](https://user-images.githubusercontent.com/41064875/115237401-7d384b00-a157-11eb-9631-226936e0cd74.png)
 
 렌더링된 후 각각의 클래스명을 확인해보면 
 
