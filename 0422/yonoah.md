@@ -1,6 +1,6 @@
 ## MVC(S) 디자인패턴
 
-![mvcs](/Users/uno/Desktop/mvcs.png)
+<img width="415" alt="mvcs" src="https://user-images.githubusercontent.com/41064875/115666683-d682c300-a37f-11eb-9bd9-1f48cec78a05.png">
 
 - store -> model
 - **뷰**는 뷰와 관련된 처리를 담당한다 (렌더링)
