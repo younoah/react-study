@@ -211,7 +211,7 @@ return (
 
 3. 그리고 선택된 비디오가 있을때 list는 한 줄씩 하고 싶음 
 
-- **이렇게 선택된 상태에 따라 보여주는 게 다르다면 props로 조절이 가능**
+- 💓 **이렇게 선택된 상태에 따라 보여주는 게 다르다면 props로 조절이 가능**
 - 간단한 방법으로 VideoList에 어떻게 보여줄 건지 알려주기
 
     ```jsx
@@ -221,8 +221,9 @@ return (
                 display={selectedVideo ? "list" : "grid"}
               />
     ```
+    * selectedVideo가 있다면 list로 보여주고, 없으면 grid로 보여줘! 
 
-videoList에 가서 확인해보면...아이템의 width는 실제로 item에서 정하니까 videoitem.jsx에 display 전달해줘야함 
+videoList에 가서 확인해보면...아이템의 width는 실제로 item(.container)에서 정하니까 videoitem.jsx에 display 전달해줘야함 
 
 ```jsx
 import React from "react";
@@ -360,15 +361,23 @@ export default VideoItem;
     1. 만약 text가 계속 연결되어 있으면 비디오가 한도 끝도 없이 옆으로 늘어짐 
 
      → Pre 태그에서 CSS로 해결하면 됨 
+     ```css
+     white-space: pre-wrap
+     ```
 
 
 👀 white-space 가 뭔가요? : 
 
 [https://developer.mozilla.org/en-US/docs/Web/CSS/white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space)
 
-### [화이트스페이스](https://terms.naver.com/entry.naver?docId=1232515&cid=40942&categoryId=32838)white space
+### [화이트스페이스](https://terms.naver.com/entry.naver?docId=1232515&cid=40942&categoryId=32838)white space : 요소가 공백 문자를 처리하는 법 지정
 
 [화면상으로는 아무것도 표시되지 않는 문자](https://terms.naver.com/entry.naver?docId=1232515&cid=40942&categoryId=32838)
+
+💓 >word-break : whether line breaks appear wherever the text would otherwise overflow its content box. 텍스트가 자신의 콘텐츠 박스 밖으로 오버플로 할 때 줄을 바꿀 지 지정합니다
+```css
+word-break: break-all;
+```
 
 ## 8.11 ~ 8.12 다시 목록으로 돌아가기 
 ✅ **상태만 전환하기**
