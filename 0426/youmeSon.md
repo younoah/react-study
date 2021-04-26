@@ -265,3 +265,12 @@ ReactDOM.render(
 );
 ```
 
+## 8.15 Responsive design
+✅ react developer tool 이용하여 먼저 계획 
+
+1) app content 안에 detail 과 list가 들어있는 것 확인
+
+2) app 에서 css mediaquery추가하면 될 듯 
+
+3) app module.css에서 media query 사용하여 flex-direcion을 column으로 바꾸어주기! 
+
