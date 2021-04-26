@@ -81,7 +81,7 @@ const VideoDetail = ({ video }) => (
 export default VideoDetail;
 ```
 
-3. video item들은 클릭이나 디스플레이가 바뀌지 않는 한 렌더링 되야 할 이유가 없음 
+3. video item들은 클릭이나 디스플레이가 바뀌지 않는 한 렌더링 되야 할 이유가 없음 -> hook의 memo 사용 
 
 ```jsx
 import React, { memo } from "react";
