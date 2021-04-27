@@ -14,7 +14,7 @@ _e.g_
 
 **SPA의 문제점 💥**
 
-- 바뀌는 화면은 실제로는 동일한 url이기 때문에 북마크를할 수가가 없다.
+- 바뀌는 화면은 실제로는 동일한 url이기 때문에 북마크를할 수가 없다.
 
 - 뒤로 가기, 앞으로 가기 등 브라우저의 내비게이션에 추가가 되지 않는다.
 
@@ -22,7 +22,7 @@ _e.g_
 
 React에서 Routing을 사용할 수 있게 도와주는 library이다.
 
-e.g) 기본적인 라우팅 사용
+- 기본적인 라우팅 사용
 
 ```jsx
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
@@ -69,7 +69,7 @@ Switch는 조건문처럼 속해 있는 Route들을 돌면서 path가 조건에 
 <Route path="profile" component={Profile}>
 ```
 
-- 기존에 사용할 때는 이런 식으로 인라인으로 사용했었는데 이제는 Hook에 있는 useHistory 등을 이용해서 훨씬 더 간편하게 사용할 수 있다.
+- 기존에 사용할 때는 위와 같이 인라인으로 사용했었는데 이제는 Hook에 있는 useHistory 등을 이용해서 훨씬 더 간편하게 사용할 수 있다.
   (기존의 방법은 쓸데없는 컴포넌트의 연산이 일어나고, 화면이 깜빡일 수도 있다고 한다.)
 
 ✅ 추후에 생각할 점
