@@ -23,27 +23,13 @@ const FileInput = props => (
 // {...props}의 형태를 주의깊게 보자.
 ```
 
-> **궁금증** > `<ImageFileInput {...props} />` 에서 props 전달을 `{...props}` 이렇게 전달하는게 낮설어 보였다.
+> **궁금증** > `<ImageFileInput {...props} />` 에서 props 전달을 `{...props}` 이 부분이 구조분해하고 객체로 하는 걸로 착각했었다.
 >
-> 객체로 전달하는 방식으로 props를 전달할 수 있는거 같은데
+> jsx 변수정의를 사용해서 객체의 구조를 분해해서 할당하는 방식으로 해석하면 될 것 같다.
 >
-> `<ImageFileInput props /> ` 이렇게와의 차이가 뭘까..?
->
-> ```js
-> // 확인용
-> const obj = {
->   a: 'hi',
->   b: 'hello',
->   c: 'world',
-> };
->
-> function test({ ...newObj }) {
->   console.log(newObj);
-> }
->
-> test(obj);
-> // { a: 'hi', b: 'hello', c: 'world' }
-> ```
+> 그래도 이렇게 props를 전달할 수 있는게 신기하다.
+
+
 
 ## 파일타입 인풋 꾸미기
 
