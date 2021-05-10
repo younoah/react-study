@@ -28,6 +28,7 @@
     const [cards, setCards] = useState({});
     const [userId, setUserId] = useState(historyState && historyState.id);
     ```
+    - ***optional chaining -*  history가 있고 그.다.음 location이 있으면 state를 줘!**
     - history 안에 있는 location 안에 state가 들어 있음
 
     3. 로그인에 관련된 정보가 변경되면 콜백함수가 호출되므로 , 사용자가 변경될때 마다 setUserId 호출해주면 됨 
